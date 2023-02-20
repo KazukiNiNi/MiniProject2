@@ -1,0 +1,20 @@
+<form action=<%="/room/updateRoom/" + data._id%> method="POST" class="border p-2">
+<!-- <form action=<%#="/record/record/edit&" + data._id%>  method="POST" class="border p-2"> -->
+    <div class="form-group">
+        <label for="roomName">Room Name:</label>
+        <input type="text" class="form-control" id="roomName" name="roomName"  value=<%=data.roomName%>>
+    </div>
+    <div class="form-group">
+        <label for="roomPic">Room Picture:</label>
+        <input type="text" class="form-control" id="roomPic" name="roomPic"  value=<%=data.roomPic%>>
+    </div>
+    <div class="form-group">
+        <label for="roomLimit">Room Limit:</label>
+        <input type="number" class="form-control" id="roomLimit" name="roomLimit" value=<%=data.roomLimit%>>
+    </div>
+    <div class="form-group">
+        <label for="roomPrice">Room Price:</label>
+        <input type="number" class="form-control" id="roomPrice" name="roomPrice" value=<%=data.roomPrice%>>
+    </div>
+    <input type="submit" class="btn btn-primary mt-1" value="Submit">
+</form>
